@@ -20,7 +20,7 @@ class PatiencePage extends StatefulWidget {
 }
 
 class _PatiencePageState extends State<PatiencePage> {
-  late DateTime toDay = DateTime(2022, 10, 26);
+  late DateTime toDay = DateTime.now();
   late int date;
   late int times;
   late int prices;
