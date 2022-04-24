@@ -13,9 +13,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Tolerating Snack',
       theme: ThemeData(
-        fontFamily: 'NotoSansKR',
+        fontFamily: 'nanum-square-round',
         primarySwatch: Colors.blue,
       ),
       home: const RootPage(),
