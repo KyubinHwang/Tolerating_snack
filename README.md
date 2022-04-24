@@ -1,16 +1,45 @@
-# snack_patience
+# 군것질을 참아보자 🍫🍫🔥🔥
 
-A new Flutter project.
+군것질을 얼마나 참았는지 확인해보고 동기부여를 받아보자!! 🔥🔥
 
-## Getting Started
+### 💎 개요
 
-This project is a starting point for a Flutter application.
+- flutter을 이용한 개인 프로젝트를 해보고자 함!!
+- 최근 react를 이용한 웹개발 공부를 하다보니 앱 개발도 해보고 싶어서 오랜만에 진행해봄!!
+- 기획, UI, 개발 다 직접 해보기
+- 단 기간에 집중해서 진행한 개발 내용!!
 
-A few resources to get you started if this is your first Flutter project:
+### 💎 기획 내용
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- 군것질거리들을 참으려고 해도 동기부여가 잘 안되는 경우가 많음
+- 이를 간단하게 참고자 하는 군것질, 군것질의 가격, 하루에 얼마나 먹는지를 작성하고 
+- 이에 대해서 얼마나 참았는지 날짜 계산 및 4개의 목표 달성률을 확인, 또한 군것질을 참음으로써 얼마나 돈을 아꼈는지 확인할 수 있도록 함
+- 또한 다시 군것질을 설정하고 싶다면 되돌아가는 버튼 또한 UI에 넣어주었다.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 💎 주요 기능
+
+#### 👉 시작 화면
+
+- 군것질 이름, 군것질 접하는 횟수, 군것질 가격 입력 TextInputForm
+- 위 정보를 넘기는 버튼
+
+#### 👉 메인 화면
+
+- 군것질 참은 일 수 계산
+- 목표 일 달성률 계산
+- 아낀 금액 계산
+- 리셋 버튼
+
+### 💎 와이어 프레임
+
+![참아보자-1](https://user-images.githubusercontent.com/70309113/164887252-861496ca-0754-40d7-a36d-2721d4c44f73.jpg)
+
+### 💎 UI
+
+
+### 💎 느낀 점 및 정리하기
+
+#### 👉 느낀 점
+
+#### 👉 보완할 점
+
