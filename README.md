@@ -35,7 +35,9 @@
 ![참아보자-1](https://user-images.githubusercontent.com/70309113/164887252-861496ca-0754-40d7-a36d-2721d4c44f73.jpg)
 
 ### 💎 UI
+<img width="325" alt="스크린샷 2022-04-24 오후 5 07 34" src="https://user-images.githubusercontent.com/70309113/164967021-dc0c6942-9d10-4b40-803d-9fad070659bb.png"> <img width="325" alt="스크린샷 2022-04-24 오후 5 07 44" src="https://user-images.githubusercontent.com/70309113/164967026-c3af8e51-d522-4141-afd6-4c6d633c8719.png"> <img width="325" alt="스크린샷 2022-04-24 오후 5 08 10" src="https://user-images.githubusercontent.com/70309113/164967029-860bdc08-1b5a-4c0d-ab11-13be5f0e4466.png">
 
+<img width="325" alt="스크린샷 2022-04-24 오후 5 08 23" src="https://user-images.githubusercontent.com/70309113/164967036-756084e4-41af-49ca-be6d-c3cb277e7a5f.png"> <img width="325" alt="스크린샷 2022-04-24 오후 5 08 33" src="https://user-images.githubusercontent.com/70309113/164967040-152ce531-52db-4c2a-a5c2-e1580d1f2ef3.png">
 
 ### 💎 느낀 점 및 정리하기
 
