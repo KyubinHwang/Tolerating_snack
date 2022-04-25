@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'patience.dart';
+import 'package:intl/intl.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class StartPage extends StatefulWidget {
   const StartPage({Key? key}) : super(key: key);
@@ -12,7 +14,7 @@ class _StartPageState extends State<StartPage> {
   late String snack = "";
   late String snackTimes = "";
   late String snackPrice = "";
-  late DateTime startDay = DateTime.now();
+  late String startDay = DateFormat('yyyyMMdd').format(DateTime.now());
 
   @override
   Widget build(BuildContext context) {
@@ -159,11 +161,12 @@ class _StartPageState extends State<StartPage> {
                                 builder: (context) => PatiencePage(
                                       snack: snack,
                                       snackTimes: snackTimes,
-                                      snackPrices: snackPrice,
+                                      snackPrice: snackPrice,
                                       startDay: startDay,
                                     )),
                             (Route<dynamic> route) => false,
                           );
+                    setData();
                   },
                   child: const Text(
                     "시작하기!!",
@@ -177,5 +180,14 @@ class _StartPageState extends State<StartPage> {
         ],
       ),
     )));
+  }
+
+  Future<void> setData() async {
+    return await FirebaseFirestore.instance.collection("info").doc("data").set({
+      "snack": snack,
+      "snackTimes": snackTimes,
+      "snackPrice": snackPrice,
+      "startDay": startDay,
+    });
   }
 }
