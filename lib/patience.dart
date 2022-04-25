@@ -5,13 +5,14 @@ import 'start.dart';
 class PatiencePage extends StatefulWidget {
   final String snack;
   final String snackTimes;
-  final String snackPrices;
-  final DateTime startDay;
+  final String snackPrice;
+  final String startDay;
+
   const PatiencePage({
     Key? key,
     required this.snack,
     required this.snackTimes,
-    required this.snackPrices,
+    required this.snackPrice,
     required this.startDay,
   }) : super(key: key);
 
@@ -21,19 +22,24 @@ class PatiencePage extends StatefulWidget {
 
 class _PatiencePageState extends State<PatiencePage> {
   late DateTime toDay = DateTime.now();
-  late int date;
-  late int times;
-  late int prices;
+  late String snack = "";
+  late String startDay = "";
+  late int date = 0;
+  late String times = "";
+  late String prices = "";
 
   @override
-  // ignore: must_call_super
   void initState() {
+    super.initState();
+    snack = widget.snack;
+    times = widget.snackTimes;
+    prices = widget.snackPrice;
+    startDay = widget.startDay;
+
     int duration =
-        int.parse(toDay.difference(widget.startDay).inDays.toString());
+        int.parse(toDay.difference(DateTime.parse(startDay)).inDays.toString());
 
     date = duration;
-    times = int.parse(widget.snackTimes);
-    prices = int.parse(widget.snackPrices);
   }
 
   @override
@@ -97,7 +103,7 @@ class _PatiencePageState extends State<PatiencePage> {
             children: [
               Column(
                 children: [
-                  Text('${widget.snack} 참은지...',
+                  Text('$snack 참은지...',
                       style: const TextStyle(
                         fontSize: 23,
                         fontWeight: FontWeight.bold,
@@ -209,7 +215,7 @@ class _PatiencePageState extends State<PatiencePage> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
-                    '아낀 금액 (하루 ${widget.snackTimes}번 기준)',
+                    '아낀 금액 (하루 $times번 기준)',
                     style: const TextStyle(
                       fontSize: 23,
                       fontWeight: FontWeight.bold,
@@ -217,7 +223,7 @@ class _PatiencePageState extends State<PatiencePage> {
                   ),
                   const Padding(padding: EdgeInsets.all(15)),
                   Text(
-                    '지금까지 ${prices * times * date}원 아꼈습니다!!',
+                    '지금까지 ${int.parse(prices) * int.parse(times) * date}원 아꼈습니다!!',
                     style: const TextStyle(fontSize: 17),
                   ),
                   const Padding(padding: EdgeInsets.all(15)),
