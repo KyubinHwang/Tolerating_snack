@@ -21,7 +21,7 @@
 #### 👉 시작 화면
 
 - 군것질 이름, 군것질 접하는 횟수, 군것질 가격 입력 TextInputForm (String 타입)
-- 위 정보를 넘기는 버튼 (Navigation으로 이동 후 정보들 넘기기)
+- 위 정보를 넘기는 버튼 (Navigation으로 이동 후 정보들 넘기기, 이를 firebase에 데이터 저장)
 
 #### 👉 메인 화면
 
@@ -39,6 +39,10 @@
 
 <img width="325" alt="스크린샷 2022-04-24 오후 5 08 23" src="https://user-images.githubusercontent.com/70309113/164967036-756084e4-41af-49ca-be6d-c3cb277e7a5f.png"> <img width="325" alt="스크린샷 2022-04-24 오후 5 08 33" src="https://user-images.githubusercontent.com/70309113/164967040-152ce531-52db-4c2a-a5c2-e1580d1f2ef3.png">
 
+### 💎 data
+
+<img width="1137" alt="스크린샷 2022-04-26 오전 12 56 45" src="https://user-images.githubusercontent.com/70309113/165127205-2d936a9d-c01d-45d4-8b8f-ec5a22ae1529.png">
+
 ### 💎 느낀 점 및 정리하기
 
 #### 👉 느낀 점
@@ -53,4 +57,4 @@
 - 단순한 아이디어를 발전시킨 것이기 때문에 좀더 심화된 아이디어와 함께 좀더 다양한 페이지 만들어보기
 - 애니메이션 효과를 줄 수 있는 방법이 없을지 고민하기
 - appBar의 색상이 어색하여 수정필요!!
-- 데이터를 저장해 둘 필요있음. 이때 shared preferences를 이용하여 데이터 저장 후 데이터가 저장되어 있다면 메인 화면이 출력되게 설정하기!!
+- 데이터를 저장해 둘 필요있음. 이때 firebase에 데이터 저장해서 만약 데이터가 저장되어 있다면 새로 데이터 설정할 필요없이 진행함!
